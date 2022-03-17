@@ -9,15 +9,12 @@ import  {useState} from 'react';
 function Newlevel() {
     const optionservice = [
         'Chọn dịch vụ', 'Khám tim mạch', 'Khám sản - Phụ khoa','Khám răng hàm mặt','Khám tai mũi họng'
-      ];
-      const sumitservice =(e)=>{
-          console.log(e.value)
-      }
-      const defaultOptionservice = optionservice[0];
-      const [isShow, setIsShow] = useState(false);
-     
-
-      
+    ];
+    const sumitservice =(e)=>{
+        console.log(e.value)
+    }
+    const defaultOptionservice = optionservice[0];
+    const [isShow, setIsShow] = useState(false);
     return(
         <div className={classes.level}>
             <div className={classes.levelinfo}>
@@ -64,7 +61,7 @@ function Newlevel() {
                             <div  className={classes.print} onClick={()=>setIsShow(true)} >
                                 <div className={classes.printtitle}>In số </div>
                                 { isShow &&  <div className={classes.modal}>
-                                           <div className={classes.modal__item}>
+                                        <div className={classes.modal__item}>
                                             <Link to ="/level/">
                                             <div className={classes.modal__item_close}>
                                                     &times;
@@ -74,24 +71,20 @@ function Newlevel() {
                                             <div className={classes.modal__item_number}>2001201</div>
                                             <div className={classes.modal__item_des}>DV: Khám răng hàm mặt <span>(tại quầy số 1)</span></div>
                                             <div className={classes.modal__item_footer}>s
-
-                                                        <div className={classes.modal__item_footer__item}>
-                                                                    <span>Thời gian cấp:</span>
-                                                                    <span>09:30 11/10/2021</span>
-                                                        </div>
-                                                        <div className={classes.modal__item_footer__item}>
-                                                                    <span>Thời gian cấp:</span>
-                                                                    <span>09:30 11/10/2021</span>
-                                                        </div>
-                                                
+                                                <div className={classes.modal__item_footer__item}>
+                                                    <span>Thời gian cấp:</span>
+                                                    <span>09:30 11/10/2021</span>
+                                                </div>
+                                                <div className={classes.modal__item_footer__item}>
+                                                    <span>Thời gian cấp:</span>
+                                                    <span>09:30 11/10/2021</span>
+                                                </div>
                                             </div>
-                                
-                                      </div>
-                             </div>
-                     }    </div>
+                                    </div>
+                            </div>
+                    }    </div>
                         {/* </Link> */}
-                         </div>
-                                                     
+                        </div>
                     </div>
                 </div>
             
